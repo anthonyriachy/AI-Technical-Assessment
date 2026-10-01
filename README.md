@@ -1,7 +1,3 @@
-# ArcVault Intake & Triage
-
-An AI workflow for the Valsoft AI Engineer assessment. It takes a customer message from a webhook, classifies it, pulls out the key details, routes it to a team queue or to Human Review, and saves a JSON record with a short summary.
-
 ## Run it
 
 Needs Node 22.18 or newer and a free Groq API key from [console.groq.com/keys](https://console.groq.com/keys).
