@@ -1,0 +1,16 @@
+# Valsoft brief is marked "Confidential — Internal Use Only"
+docs/brief.md
+
+# Secrets and dependencies
+.env
+node_modules/
+
+# Demo / experiment output (the submission is output/)
+demo/
+playground/
+
+# Working notes, kept locally, not submitted (only the write-up and the prompts doc ship)
+eval-results/
+docs/*
+!docs/writeup.md
+!docs/prompts.md

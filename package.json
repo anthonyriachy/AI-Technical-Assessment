@@ -1,0 +1,25 @@
+{
+  "name": "arcvault-triage",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node --env-file=.env src/server.ts",
+    "test": "node --test",
+    "typecheck": "tsc --noEmit",
+    "send": "node scripts/send-samples.ts",
+    "export": "node scripts/export-json.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "openai": "^7.25.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "rec_d05bf9b9",
+    "received_at": "2026-10-01T18:28:20.633Z",
+    "source": "Email",
+    "raw_message": "Hi, I tried logging in this morning and keep getting a 403 error. My account is arcvault.io/user/jsmith. This started after your update last Tuesday.",
+    "classification": {
+      "category": "Bug Report",
+      "confidence": 0.95,
+      "priority": "High"
+    },
+    "enrichment": {
+      "core_issue": "The customer cannot log in and receives a 403 error.",
+      "identifiers": [
+        {
+          "type": "account_id",
+          "value": "arcvault.io/user/jsmith"
+        },
+        {
+          "type": "error_code",
+          "value": "403"
+        }
+      ],
+      "urgency": "high",
+      "urgency_evidence": "keep getting a 403 error",
+      "billing": {
+        "disputed": false,
+        "charged_amount": null,
+        "expected_amount": null,
+        "error_amount": null
+      }
+    },
+    "routing": {
+      "destination_queue": "Engineering",
+      "standard_queue": "Engineering",
+      "escalated": false,
+      "escalation_reasons": []
+    },
+    "summary": "The customer reports being unable to log in, receiving a 403 error on account arcvault.io/user/jsmith after the recent update on Tuesday. The Engineering team should investigate the login failure and error code 403 as a high‑priority bug. No escalation to Human Review is needed.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:22.394Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  },
+  {
+    "id": "rec_d372f4f0",
+    "received_at": "2026-10-01T18:28:22.415Z",
+    "source": "Web Form",
+    "raw_message": "We'd love to see a bulk export feature for our audit logs. We're a compliance-heavy org and this would save us hours every month.",
+    "classification": {
+      "category": "Feature Request",
+      "confidence": 0.96,
+      "priority": "Low"
+    },
+    "enrichment": {
+      "core_issue": "The customer requests a bulk export feature for audit logs.",
+      "identifiers": [],
+      "urgency": "low",
+      "urgency_evidence": null,
+      "billing": {
+        "disputed": false,
+        "charged_amount": null,
+        "expected_amount": null,
+        "error_amount": null
+      }
+    },
+    "routing": {
+      "destination_queue": "Product",
+      "standard_queue": "Product",
+      "escalated": false,
+      "escalation_reasons": []
+    },
+    "summary": "The customer requests a bulk export feature for audit logs to aid their compliance processes. The Product team should acknowledge the request and add it to the feature backlog for consideration. No escalation is needed.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:23.299Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  },
+  {
+    "id": "rec_e819e71b",
+    "received_at": "2026-10-01T18:28:23.308Z",
+    "source": "Support Portal",
+    "raw_message": "Invoice #8821 shows a charge of $1,240 but our contract rate is $980/month. Can someone look into this?",
+    "classification": {
+      "category": "Billing Issue",
+      "confidence": 0.96,
+      "priority": "Medium"
+    },
+    "enrichment": {
+      "core_issue": "The customer reports that Invoice #8821 shows an incorrect charge.",
+      "identifiers": [
+        {
+          "type": "invoice_number",
+          "value": "#8821"
+        }
+      ],
+      "urgency": "low",
+      "urgency_evidence": null,
+      "billing": {
+        "disputed": true,
+        "charged_amount": 1240,
+        "expected_amount": 980,
+        "error_amount": 260
+      }
+    },
+    "routing": {
+      "destination_queue": "Billing",
+      "standard_queue": "Billing",
+      "escalated": false,
+      "escalation_reasons": []
+    },
+    "summary": "The customer reports that Invoice #8821 shows an incorrect charge of $1,240 instead of the contract rate $980/month. The Billing team should review the invoice details and correct any billing errors. No escalation is required as this is a standard billing issue.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:24.168Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  },
+  {
+    "id": "rec_2e2497ea",
+    "received_at": "2026-10-01T18:28:24.174Z",
+    "source": "Email",
+    "raw_message": "I'm not sure if this is the right place to ask, but is there a way to set up SSO with Okta? We're evaluating switching our auth provider.",
+    "classification": {
+      "category": "Technical Question",
+      "confidence": 0.96,
+      "priority": "Low"
+    },
+    "enrichment": {
+      "core_issue": "The customer wants to know if SSO with Okta can be set up.",
+      "identifiers": [],
+      "urgency": "none",
+      "urgency_evidence": null,
+      "billing": {
+        "disputed": false,
+        "charged_amount": null,
+        "expected_amount": null,
+        "error_amount": null
+      }
+    },
+    "routing": {
+      "destination_queue": "Support",
+      "standard_queue": "Support",
+      "escalated": false,
+      "escalation_reasons": []
+    },
+    "summary": "The customer asks whether SSO with Okta can be set up for their account. The support team should respond with information about ArcVault's SSO capabilities and any integration steps for Okta. No escalation is required.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:25.538Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  },
+  {
+    "id": "rec_9c0ed1f9",
+    "received_at": "2026-10-01T18:28:25.543Z",
+    "source": "Web Form",
+    "raw_message": "Your dashboard stopped loading for us around 2pm EST. Checked our end — it's definitely on yours. Multiple users affected.",
+    "classification": {
+      "category": "Incident/Outage",
+      "confidence": 0.97,
+      "priority": "High"
+    },
+    "enrichment": {
+      "core_issue": "The dashboard has stopped loading for multiple users.",
+      "identifiers": [],
+      "urgency": "high",
+      "urgency_evidence": "Your dashboard stopped loading for us around 2pm EST.",
+      "billing": {
+        "disputed": false,
+        "charged_amount": null,
+        "expected_amount": null,
+        "error_amount": null
+      }
+    },
+    "routing": {
+      "destination_queue": "Human Review",
+      "standard_queue": "Engineering",
+      "escalated": true,
+      "escalation_reasons": [
+        {
+          "rule": "outage",
+          "detail": "Classified as Incident/Outage"
+        }
+      ]
+    },
+    "summary": "The customer reports that their dashboard stopped loading around 2 pm EST, affecting multiple users and appears to be an issue on ArcVault’s side. The Engineering team should immediately investigate the dashboard service, check logs and system health for that time window. This case was escalated to Human Review due to its classification as a high‑priority Incident/Outage, which falls under the Engineering queue.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:27.057Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  },
+  {
+    "id": "rec_1488abec",
+    "received_at": "2026-10-01T18:28:27.068Z",
+    "source": "Email",
+    "raw_message": "Our invoice #9102 charged us $4,800 but our contract says $3,600.",
+    "classification": {
+      "category": "Billing Issue",
+      "confidence": 0.97,
+      "priority": "Medium"
+    },
+    "enrichment": {
+      "core_issue": "The customer reports that invoice #9102 was charged $4,800 but the contract states $3,600.",
+      "identifiers": [
+        {
+          "type": "invoice_number",
+          "value": "#9102"
+        }
+      ],
+      "urgency": "none",
+      "urgency_evidence": null,
+      "billing": {
+        "disputed": true,
+        "charged_amount": 4800,
+        "expected_amount": 3600,
+        "error_amount": 1200
+      }
+    },
+    "routing": {
+      "destination_queue": "Human Review",
+      "standard_queue": "Billing",
+      "escalated": true,
+      "escalation_reasons": [
+        {
+          "rule": "billing_error",
+          "detail": "Billing error $1200 ≥ $500"
+        }
+      ]
+    },
+    "summary": "The customer reports that invoice #9102 was charged $4,800 instead of the contract amount $3,600, a $1,200 discrepancy. The Billing team should first verify the invoice against the contract and initiate a correction. This case was escalated to Human Review due to a billing error exceeding $500, and it belongs to the Billing queue.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:28.490Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  },
+  {
+    "id": "rec_0d04d0cc",
+    "received_at": "2026-10-01T18:28:28.498Z",
+    "source": "Web Form",
+    "raw_message": "Thanks for the quick help yesterday, all sorted now!",
+    "classification": {
+      "category": "Technical Question",
+      "confidence": 0.3,
+      "priority": "Low"
+    },
+    "enrichment": {
+      "core_issue": "The customer reports that the issue was resolved.",
+      "identifiers": [],
+      "urgency": "none",
+      "urgency_evidence": null,
+      "billing": {
+        "disputed": false,
+        "charged_amount": null,
+        "expected_amount": null,
+        "error_amount": null
+      }
+    },
+    "routing": {
+      "destination_queue": "Human Review",
+      "standard_queue": "Support",
+      "escalated": true,
+      "escalation_reasons": [
+        {
+          "rule": "low_confidence",
+          "detail": "Confidence 0.30 < 0.70"
+        }
+      ]
+    },
+    "summary": "The customer reports that their issue was resolved following quick help yesterday and no further action is needed. The receiving team should verify the closure and mark the ticket as resolved. The message was escalated to Human Review due to low confidence (0.30) in routing, likely to the Support team for final verification.",
+    "meta": {
+      "processed_at": "2026-10-01T18:28:30.220Z",
+      "provider": "api.groq.com",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "v1",
+      "schema_version": "1",
+      "warnings": []
+    }
+  }
+]
