@@ -20,4 +20,3 @@ On Groq's free tier, some calls hit the rate limit and are retried automatically
 - [output/records.json](output/records.json): the output for the 5 sample messages from the assessment, plus 2 extra edge cases (a $1,200 billing error and a thank-you note)
 - [docs/writeup.md](docs/writeup.md): the architecture write-up
 - [docs/prompts.md](docs/prompts.md): the prompts, with an explanation for each
-
